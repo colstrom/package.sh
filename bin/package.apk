@@ -2,7 +2,7 @@
 
 #!/bin/sh
 
-BACKEND='brew'
+BACKEND='apk'
 
 set -o nounset
 test -n ${DEBUG:-''} && set -o xtrace
