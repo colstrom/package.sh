@@ -72,7 +72,7 @@ entrypoint() {
                 clean|fetch|install|installed|missing|usage)
                     ${COMMAND} ${@};;
                 *)
-                    echo package.brew: command ${COMMAND} not regognized >&2
+                    echo package.brew: command ${COMMAND} not recognized >&2
                     false;;
             esac;;
     esac
