@@ -16,6 +16,12 @@ packaging operations, and supports pluggable backends.
 This would fetch an up-to-date package index, install ~fish~, and then remove
 the package index, cache, and temp files.
 
+* Supported Backends
+
+- apk
+- apt-get
+- brew
+
 * Commands
 
 | Name        | Description                                                           |
