@@ -6,7 +6,7 @@ set -o nounset
 test -n ${DEBUG:-''} && set -o xtrace
 
 clean_cache() {
-    test -z ${NO_CLEAN_CACHE} && brew cleanup
+    test -z ${NO_CLEAN_CACHE:-''} && brew cleanup
 }
 
 clean() {
