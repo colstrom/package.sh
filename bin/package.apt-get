@@ -56,7 +56,7 @@ fetch() {
 
 missing() {
     for PACKAGE in ${@}; do
-        dpkg-query --show ${PACKAGE} >/dev/null 2>/dev/null || echo ${PACKAGE}
+        dpkg-query --list 2>/dev/null | awk "\$2 == \"${PACKAGE}\" { print \$1 }" | grep -q '^ii$' || echo ${PACKAGE}
     done
 }
 
